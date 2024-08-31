@@ -2,12 +2,8 @@ export const handleGithubHook = async (req, res) => {
   try {
     const payload = req.body;
 
-    // Check if the push is to the main branch
     if (payload.ref === "refs/heads/main") {
       console.log("Push to main branch detected.");
-
-      // Handle the logic for changes in the main branch
-      // e.g., deploy code, run tests, send notifications, etc.
     }
 
     console.log("payload", payload);
