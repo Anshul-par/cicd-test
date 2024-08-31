@@ -3,6 +3,9 @@ import { exec } from "child_process";
 export const handleGithubHook = async (req, res) => {
   try {
     const payload = req.body;
+
+    console.log(payload);
+
     let url = payload.url;
 
     if (payload.ref === "refs/heads/main") {
