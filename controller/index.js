@@ -26,7 +26,7 @@ export const handleGithubHook = async (req, res) => {
 
       console.log(`Script made executable:\n${stdout}`);
 
-      exec(`./pull_repo.sh "${url}"`, (error, stdout, stderr) => {
+      exec(`/home/ansh0712/cicd/repo.sh "${url}"`, (error, stdout, stderr) => {
         if (error) {
           console.error(`Error executing script: ${error.message}`);
           return;
