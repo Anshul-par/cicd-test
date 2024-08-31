@@ -9,7 +9,7 @@ export const handleGithubHook = async (req, res) => {
       console.log("Push to main branch detected.");
     }
 
-    const scriptPath = "../repo.sh";
+    const scriptPath = "/home/ansh0712/cicd/repo.sh";
 
     const chmodCommand = `chmod +x ${scriptPath}`;
 
