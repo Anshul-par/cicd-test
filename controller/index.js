@@ -1,8 +1,6 @@
 export const handleGithubHook = async (req, res) => {
   try {
-    const payload = req.body;
-
-    console.log("payload", payload);
+    console.log("payload", req);
 
     res.sendStatus(200);
   } catch (error) {
